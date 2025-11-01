@@ -43,6 +43,10 @@ except Exception:
     pipeline = load_pipeline()
 
 # Prediction endpoint
+@app.get("/health")
+def health_check():
+    return {"status": "healthy", "message": "The service is running"}
+
 @app.post("/predict")
 def predict(sample: Sample):
     df = pd.DataFrame([sample.dict()])
