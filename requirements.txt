@@ -1,0 +1,10 @@
+pandas==2.3.3
+numpy==2.3.4
+scikit-learn==1.7.2
+joblib==1.5.2
+fastapi==0.120.3
+pydantic==2.12.3
+uvicorn[standard]
+matplotlib
+seaborn
+typing-extensions
